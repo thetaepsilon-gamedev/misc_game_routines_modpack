@@ -33,6 +33,7 @@ local strike_player = function(name, radius)
 
 	minetest.registered_chatcommands["clearinv"].func(name)
 	strike_pos(ref:get_pos(), radius)
+	return true
 end
 i.strike_player = strike_player
 
